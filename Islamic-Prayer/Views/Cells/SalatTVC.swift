@@ -18,7 +18,7 @@ class SalatTVC: UITableViewCell {
         let label = UILabel()
         label.textColor = .label
         label.numberOfLines = 1
-        label.font = UIFont(name: "Avenir Next", size: 19)
+        label.font = .systemFont(ofSize: 20, weight: .medium)
         return label
     }()
     
@@ -26,7 +26,7 @@ class SalatTVC: UITableViewCell {
         let label = UILabel()
         label.textColor = .label
         label.numberOfLines = 1
-        label.font = UIFont(name: "Avenir Next", size: 19)
+        label.font = .systemFont(ofSize: 20, weight: .medium)
         return label
     }()
     
