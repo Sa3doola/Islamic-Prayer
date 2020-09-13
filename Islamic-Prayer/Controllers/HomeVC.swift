@@ -52,6 +52,10 @@ class HomeVC: UIViewController {
     
     @IBAction func searchButtonAction(_ sender: UIButton) {
         
+        let vc = DisplayTimeVC()
+        vc.title = "Salat Time"
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
 }
@@ -71,9 +75,15 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        ChossenCountry = countries[indexPath.row]
+        CountryNameLbl.text = ChossenCountry
+        shadowView.isHidden = true
+        countriesListView.isHidden = true
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 45
     }
+    
 }
