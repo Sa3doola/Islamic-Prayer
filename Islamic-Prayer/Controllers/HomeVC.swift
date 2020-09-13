@@ -18,6 +18,8 @@ class HomeVC: UIViewController {
     @IBOutlet weak var CountryNameLbl: UILabel!
     @IBOutlet weak var CityNameTxtField: UITextField!
     
+    var viewModel = ViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,16 +28,39 @@ class HomeVC: UIViewController {
         
         CountriesTableView.delegate = self
         CountriesTableView.dataSource = self
+        
+        viewModel.delegate = self
+        
         countriesListView.clipsToBounds = true
         
         SelectButton.layer.cornerRadius = 12
         SearchButton.layer.cornerRadius = 12
     }
-
+    
     
     //MARK: - Actions
     
     @IBAction func datePickerAction(_ sender: UIDatePicker) {
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let myString = formatter.string(from: sender.date)
+        let yourDate = formatter.date(from: myString)
+        formatter.dateFormat = "dd-MM-yyyy"
+        let STRING_DATE = formatter.string(from: yourDate!)
+        
+        Date = STRING_DATE
+        print(Date!)
+        
+        let year = NSString(string: STRING_DATE)
+        let yearAfterSub = year.substring(from: 6)
+        Year = String(yearAfterSub)
+        
+        let startIndex = STRING_DATE.index(STRING_DATE.startIndex, offsetBy: 3)
+        let endIndex = STRING_DATE.index(STRING_DATE.startIndex, offsetBy: 5)
+        let month : String = STRING_DATE
+        let monthAfterSub = month.substring(with: startIndex..<endIndex)
+        Month = monthAfterSub
         
     }
     
@@ -51,14 +76,62 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func searchButtonAction(_ sender: UIButton) {
+        wayToDispaly()
+    }
+    
+    private func wayToDispaly() {
         
-        let vc = DisplayTimeVC()
-        vc.title = "Salat Time"
-        navigationController?.pushViewController(vc, animated: true)
+        if CityNameTxtField.text?.isEmpty == true {
+            
+            let alert = UIAlertController(title: "Alert",
+                                          message: "Fill The City Name!", preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "OK",
+                                       style: .cancel, handler: nil)
+            alert.addAction(cancel)
+            present(alert, animated: true)
+        }
+        else if CountryNameLbl.text?.isEmpty == true {
+            
+            let alert = UIAlertController(title: "Alert",
+                                          message: "Select your Country!", preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "OK",
+                                       style: .cancel, handler: nil)
+            alert.addAction(cancel)
+            present(alert, animated: true)
+        }
+        else {
+            guard let city = CityNameTxtField.text else { return }
+            guard let country = ChossenCountry else { return }
+            guard let month = Month else { return }
+            guard let year = Year else { return }
+            
+            viewModel.fetchPrayerData(city: city, country: country, month: month, year: year )
+        }
         
     }
     
 }
+
+extension HomeVC: IslamicViewModelDelegate {
+    
+    func didUpdataTime(_ viewModel: ViewModel, model: IslamicModel) {
+        DispatchQueue.main.async {
+            
+            let vc = DisplayTimeVC(model: model)
+            vc.title = "Salat Time"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    func didFailWithError(error: Error) {
+        
+        print(error.localizedDescription)
+    }
+    
+    
+}
+
+//MARK: - TabelView
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     

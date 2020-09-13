@@ -11,6 +11,7 @@ import Foundation
 var Date: String?
 var Month: String?
 var Year: String?
+var ChossenDate: String?
 var ChossenCity: String?
 var ChossenCountry: String?
 let salat = ["FAJR","SUNRISE", "DHUHR", "ASR", "MAGHRIB", "IHSA"]

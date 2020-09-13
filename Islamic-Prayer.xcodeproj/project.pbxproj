@@ -17,6 +17,11 @@
 		9353A4AB250E357B0060647F /* QiblaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A4AA250E357B0060647F /* QiblaVC.swift */; };
 		9353A4AE250E3D600060647F /* CountriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A4AD250E3D600060647F /* CountriesTVC.swift */; };
 		9353A4B0250E3EC30060647F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A4AF250E3EC30060647F /* Constants.swift */; };
+		9353A4B2250E49D90060647F /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A4B1250E49D90060647F /* Extentions.swift */; };
+		9353A4B4250E4A4E0060647F /* PrayerTimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A4B3250E4A4E0060647F /* PrayerTimeData.swift */; };
+		9353A4B6250E4AA60060647F /* IslamicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A4B5250E4AA60060647F /* IslamicModel.swift */; };
+		9353A4B9250E4B800060647F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A4B8250E4B800060647F /* ViewModel.swift */; };
+		9353A4BB250E6AAF0060647F /* SalatTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A4BA250E6AAF0060647F /* SalatTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		9353A4AA250E357B0060647F /* QiblaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaVC.swift; sourceTree = "<group>"; };
 		9353A4AD250E3D600060647F /* CountriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTVC.swift; sourceTree = "<group>"; };
 		9353A4AF250E3EC30060647F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9353A4B1250E49D90060647F /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		9353A4B3250E4A4E0060647F /* PrayerTimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeData.swift; sourceTree = "<group>"; };
+		9353A4B5250E4AA60060647F /* IslamicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslamicModel.swift; sourceTree = "<group>"; };
+		9353A4B8250E4B800060647F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9353A4BA250E6AAF0060647F /* SalatTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalatTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				9353A4A6250E34BE0060647F /* Resources */,
+				9353A4B7250E4B660060647F /* ViewModel */,
 				9353A4A5250E34B70060647F /* Models */,
 				9353A4A4250E34AD0060647F /* Views */,
 				9353A4A3250E349D0060647F /* Controllers */,
@@ -97,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				9353A4AF250E3EC30060647F /* Constants.swift */,
+				9353A4B3250E4A4E0060647F /* PrayerTimeData.swift */,
+				9353A4B5250E4AA60060647F /* IslamicModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +119,7 @@
 			children = (
 				9353A48F250E33B60060647F /* AppDelegate.swift */,
 				9353A491250E33B60060647F /* SceneDelegate.swift */,
+				9353A4B1250E49D90060647F /* Extentions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -123,8 +137,17 @@
 			isa = PBXGroup;
 			children = (
 				9353A4AD250E3D600060647F /* CountriesTVC.swift */,
+				9353A4BA250E6AAF0060647F /* SalatTVC.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		9353A4B7250E4B660060647F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9353A4B8250E4B800060647F /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,10 +224,15 @@
 				9353A4AE250E3D600060647F /* CountriesTVC.swift in Sources */,
 				9353A4A9250E35690060647F /* DisplayTimeVC.swift in Sources */,
 				9353A494250E33B60060647F /* HomeVC.swift in Sources */,
+				9353A4BB250E6AAF0060647F /* SalatTVC.swift in Sources */,
+				9353A4B9250E4B800060647F /* ViewModel.swift in Sources */,
 				9353A490250E33B60060647F /* AppDelegate.swift in Sources */,
+				9353A4B6250E4AA60060647F /* IslamicModel.swift in Sources */,
+				9353A4B2250E49D90060647F /* Extentions.swift in Sources */,
 				9353A4B0250E3EC30060647F /* Constants.swift in Sources */,
 				9353A492250E33B60060647F /* SceneDelegate.swift in Sources */,
 				9353A4AB250E357B0060647F /* QiblaVC.swift in Sources */,
+				9353A4B4250E4A4E0060647F /* PrayerTimeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

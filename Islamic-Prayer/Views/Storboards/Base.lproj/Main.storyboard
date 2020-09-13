@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-30" y="-1077"/>
         </scene>
-        <!--HomeVC-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="Islamic_Prayer" customModuleProvider="target" sceneMemberID="viewController">
@@ -194,7 +194,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sOq-Kj-8ja"/>
+                    <navigationItem key="navigationItem" title="Home" id="sOq-Kj-8ja"/>
                     <connections>
                         <outlet property="CityNameTxtField" destination="c3I-ON-nSr" id="EKu-QQ-NKx"/>
                         <outlet property="CountriesTableView" destination="3hx-XL-HBT" id="9CK-bI-6mV"/>
@@ -226,7 +226,7 @@
             </objects>
             <point key="canvasLocation" x="645" y="-299"/>
         </scene>
-        <!--QiblaVC-->
+        <!--Qibla-->
         <scene sceneID="GAn-vA-mQL">
             <objects>
                 <viewController id="yHa-tb-VK0" customClass="QiblaVC" customModule="Islamic_Prayer" customModuleProvider="target" sceneMemberID="viewController">
@@ -236,7 +236,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="EJC-vo-N9m"/>
                     </view>
-                    <navigationItem key="navigationItem" id="nm2-1N-BBj"/>
+                    <navigationItem key="navigationItem" title="Qibla" id="nm2-1N-BBj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8s-1J-CqE" sceneMemberID="firstResponder"/>
             </objects>
