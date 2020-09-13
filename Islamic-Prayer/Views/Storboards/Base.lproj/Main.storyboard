@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="npw-rA-Tkp">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Wh2-GT-273">
+            <objects>
+                <tabBarController id="npw-rA-Tkp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XOG-bI-QhX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="d68-tK-Ph5" kind="relationship" relationship="viewControllers" id="nFA-No-eZc"/>
+                        <segue destination="1zi-ry-EcQ" kind="relationship" relationship="viewControllers" id="Ref-sc-saU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpw-ay-xEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30" y="-1077"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="Islamic_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKR-19-sCa">
+                                <rect key="frame" x="85" y="427" width="150" height="52"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="UOw-jt-eC1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="VIR-FE-Jsu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUE-fQ-2DR"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="5rw-Vq-KWJ">
+                                <rect key="frame" x="10" y="54" width="300" height="343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Am0-EB-HX5">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="P5w-RS-ipW">
+                                        <rect key="frame" x="0.0" y="34.5" width="300" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="9xb-2h-1vW"/>
+                                            <constraint firstAttribute="width" constant="300" id="Y9E-dD-JBc"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Y5-e0-iYX"/>
+                                        </connections>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Country:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-du-Wwu">
+                                        <rect key="frame" x="0.0" y="191.5" width="300" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="et3-sf-YfN">
+                                        <rect key="frame" x="0.0" y="226" width="300" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUO-Ij-jYV">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                <state key="normal" title="Select">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rsT-g8-aYF"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="xmX-LX-gZZ">
+                                                <rect key="frame" x="160" y="0.0" width="140" height="40"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select City:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW2-ke-jPV">
+                                        <rect key="frame" x="0.0" y="273" width="300" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3I-ON-nSr">
+                                        <rect key="frame" x="0.0" y="307.5" width="300" height="35.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0k-hH-Uld">
+                                <rect key="frame" x="10" y="54" width="300" height="353"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZC-DO-llC">
+                                        <rect key="frame" x="0.0" y="40" width="300" height="313"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3hx-XL-HBT">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="313"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountriesTVC" id="N7j-0e-rUR" customClass="CountriesTVC" customModule="Islamic_Prayer" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="300" height="43.5"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N7j-0e-rUR" id="RO5-KD-uBa">
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="udd-Ws-lqL">
+                                                                    <rect key="frame" x="86.5" y="9" width="127.5" height="26"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="udd-Ws-lqL" firstAttribute="centerY" secondItem="RO5-KD-uBa" secondAttribute="centerY" id="kEs-CG-pbg"/>
+                                                                <constraint firstItem="udd-Ws-lqL" firstAttribute="centerX" secondItem="RO5-KD-uBa" secondAttribute="centerX" id="oho-0V-oS3"/>
+                                                            </constraints>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="CountryNameLbl" destination="udd-Ws-lqL" id="f57-6t-uTy"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="3hx-XL-HBT" firstAttribute="leading" secondItem="8ZC-DO-llC" secondAttribute="leading" id="DGp-za-bGy"/>
+                                            <constraint firstAttribute="trailing" secondItem="3hx-XL-HBT" secondAttribute="trailing" id="Hy4-mb-qCL"/>
+                                            <constraint firstAttribute="bottom" secondItem="3hx-XL-HBT" secondAttribute="bottom" id="UGm-1D-aYG"/>
+                                            <constraint firstItem="3hx-XL-HBT" firstAttribute="top" secondItem="8ZC-DO-llC" secondAttribute="top" id="YUo-Hl-u3w"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpC-eH-1AZ">
+                                        <rect key="frame" x="76" y="6" width="148" height="26"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4L-1t-veV">
+                                        <rect key="frame" x="260" y="7" width="25" height="24"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <action selector="dismissTableViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awN-jy-36n"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="8ZC-DO-llC" firstAttribute="top" secondItem="JpC-eH-1AZ" secondAttribute="bottom" constant="8" id="9aR-fa-YgT"/>
+                                    <constraint firstItem="h4L-1t-veV" firstAttribute="centerY" secondItem="JpC-eH-1AZ" secondAttribute="centerY" id="ADe-AD-sZT"/>
+                                    <constraint firstItem="8ZC-DO-llC" firstAttribute="leading" secondItem="J0k-hH-Uld" secondAttribute="leading" id="LQI-07-iBL"/>
+                                    <constraint firstItem="JpC-eH-1AZ" firstAttribute="centerX" secondItem="J0k-hH-Uld" secondAttribute="centerX" id="SSe-dI-Y6i"/>
+                                    <constraint firstAttribute="trailing" secondItem="h4L-1t-veV" secondAttribute="trailing" constant="15" id="cXI-fc-jjP"/>
+                                    <constraint firstItem="8ZC-DO-llC" firstAttribute="top" secondItem="J0k-hH-Uld" secondAttribute="top" constant="40" id="ioT-Fv-f3C"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ZC-DO-llC" secondAttribute="trailing" id="m0Y-Cl-v10"/>
+                                    <constraint firstItem="JpC-eH-1AZ" firstAttribute="top" secondItem="J0k-hH-Uld" secondAttribute="top" constant="6" id="tHp-u3-V4A"/>
+                                    <constraint firstAttribute="bottom" secondItem="8ZC-DO-llC" secondAttribute="bottom" id="vx8-GG-W6J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5rw-Vq-KWJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="1mD-ET-z4y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J0k-hH-Uld" secondAttribute="trailing" constant="10" id="54e-qO-60s"/>
+                            <constraint firstItem="5rw-Vq-KWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6oJ-ni-Km8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jKR-19-sCa" secondAttribute="bottom" constant="40" id="HIb-KJ-enE"/>
+                            <constraint firstItem="jKR-19-sCa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SrB-Qf-hBD"/>
+                            <constraint firstItem="J0k-hH-Uld" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fX2-Tc-tld"/>
+                            <constraint firstItem="J0k-hH-Uld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ruc-8P-5aW"/>
+                            <constraint firstItem="jKR-19-sCa" firstAttribute="top" secondItem="J0k-hH-Uld" secondAttribute="bottom" constant="20" id="yWW-Xw-Py1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sOq-Kj-8ja"/>
+                    <connections>
+                        <outlet property="CityNameTxtField" destination="c3I-ON-nSr" id="EKu-QQ-NKx"/>
+                        <outlet property="CountriesTableView" destination="3hx-XL-HBT" id="9CK-bI-6mV"/>
+                        <outlet property="CountryNameLbl" destination="xmX-LX-gZZ" id="mYZ-79-Cph"/>
+                        <outlet property="SearchButton" destination="jKR-19-sCa" id="p2a-Jo-Cw3"/>
+                        <outlet property="SelectButton" destination="nUO-Ij-jYV" id="Fdt-id-Dbc"/>
+                        <outlet property="countriesListView" destination="8ZC-DO-llC" id="dyg-d3-15M"/>
+                        <outlet property="shadowView" destination="J0k-hH-Uld" id="Vzh-bn-D1j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-833" y="509"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GAD-n9-UyV">
+            <objects>
+                <navigationController id="1zi-ry-EcQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="location" catalog="system" id="Bbg-Lz-ZuW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fXz-yD-cFj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yHa-tb-VK0" kind="relationship" relationship="rootViewController" id="vMb-jo-18E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXv-UN-Qyu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="-299"/>
+        </scene>
+        <!--QiblaVC-->
+        <scene sceneID="GAn-vA-mQL">
+            <objects>
+                <viewController id="yHa-tb-VK0" customClass="QiblaVC" customModule="Islamic_Prayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kfV-cj-1cq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="EJC-vo-N9m"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nm2-1N-BBj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8s-1J-CqE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="510"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rj2-YT-HvN">
+            <objects>
+                <navigationController id="d68-tK-Ph5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="clock" catalog="system" id="puk-op-hNJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bWm-R1-MED">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JWk-ha-xes"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnF-5j-Ldq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-832" y="-299"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="location" catalog="system" width="128" height="115"/>
+    </resources>
+</document>
