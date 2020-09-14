@@ -26,6 +26,22 @@ class DisplayTimeVC: UIViewController {
         return imageView
     }()
     
+    private let dateLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .label
+        label.numberOfLines = 1
+        label.font = .systemFont(ofSize: 20, weight: .medium)
+        return label
+    }()
+    
+    private let cityNameLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .label
+        label.numberOfLines = 1
+        label.font = .systemFont(ofSize: 20, weight: .medium)
+        return label
+    }()
+    
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.clipsToBounds = true
@@ -41,20 +57,35 @@ class DisplayTimeVC: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        
+    
         view.addSubview(scrollView)
         scrollView.addSubview(imageView)
+        scrollView.addSubview(dateLabel)
+        scrollView.addSubview(cityNameLabel)
         scrollView.addSubview(tableView)
+        
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         scrollView.frame = view.bounds
         
-        imageView.frame = CGRect(x: 0, y: 0,
-                                 width: view.width, height: 300)
-        tableView.frame = CGRect(x: 0, y: imageView.bottom,
-                                 width: view.width, height: view.height/2)
+        imageView.frame = CGRect(x: 0,
+                                 y: 0,
+                                 width: view.width,
+                                 height: 300)
+        dateLabel.frame = CGRect(x: view.width/3+20,
+                                 y: 80,
+                                 width: 150,
+                                 height: 40)
+        cityNameLabel.frame = CGRect(x: view.width/3+20,
+                                     y: dateLabel.bottom + 5,
+                                     width: 150,
+                                     height: 40)
+        tableView.frame = CGRect(x: 0,
+                                 y: imageView.bottom,
+                                 width: view.width,
+                                 height: view.height/2)
     }
     
     init(model: IslamicModel) {
@@ -70,13 +101,16 @@ class DisplayTimeVC: UIViewController {
     
     
     private func configureModels() {
-            models.append(IslamicViewModel.init(name: salat[0], time: model.chossenFajr))
-            models.append(IslamicViewModel.init(name: salat[1], time: model.chossenSunrise))
-            models.append(IslamicViewModel.init(name: salat[2], time: model.chossenDhuhr))
-            models.append(IslamicViewModel.init(name: salat[3], time: model.chossenAsr))
-            models.append(IslamicViewModel.init(name: salat[4], time: model.chossenMaghrib))
-            models.append(IslamicViewModel.init(name: salat[5], time: model.chossenIsha))
-    
+        
+        dateLabel.text = Date
+        cityNameLabel.text = ChossenCity
+        models.append(IslamicViewModel.init(name: salat[0], time: model.chossenFajr))
+        models.append(IslamicViewModel.init(name: salat[1], time: model.chossenSunrise))
+        models.append(IslamicViewModel.init(name: salat[2], time: model.chossenDhuhr))
+        models.append(IslamicViewModel.init(name: salat[3], time: model.chossenAsr))
+        models.append(IslamicViewModel.init(name: salat[4], time: model.chossenMaghrib))
+        models.append(IslamicViewModel.init(name: salat[5], time: model.chossenIsha))
+        
     }
     
 }
