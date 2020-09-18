@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93275C8125145525000C8B6C /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93275C8025145525000C8B6C /* LocationDelegate.swift */; };
+		93275C8325145602000C8B6C /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93275C8225145602000C8B6C /* UserDefaults.swift */; };
 		9353A490250E33B60060647F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A48F250E33B60060647F /* AppDelegate.swift */; };
 		9353A492250E33B60060647F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A491250E33B60060647F /* SceneDelegate.swift */; };
 		9353A494250E33B60060647F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9353A493250E33B60060647F /* HomeVC.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93275C8025145525000C8B6C /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
+		93275C8225145602000C8B6C /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		9353A48C250E33B60060647F /* Islamic-Prayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Islamic-Prayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9353A48F250E33B60060647F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9353A491250E33B60060647F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				9353A48F250E33B60060647F /* AppDelegate.swift */,
 				9353A491250E33B60060647F /* SceneDelegate.swift */,
 				9353A4B1250E49D90060647F /* Extentions.swift */,
+				93275C8025145525000C8B6C /* LocationDelegate.swift */,
+				93275C8225145602000C8B6C /* UserDefaults.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93275C8125145525000C8B6C /* LocationDelegate.swift in Sources */,
 				9353A4AE250E3D600060647F /* CountriesTVC.swift in Sources */,
 				9353A4A9250E35690060647F /* DisplayTimeVC.swift in Sources */,
 				9353A494250E33B60060647F /* HomeVC.swift in Sources */,
@@ -232,6 +239,7 @@
 				9353A4B0250E3EC30060647F /* Constants.swift in Sources */,
 				9353A492250E33B60060647F /* SceneDelegate.swift in Sources */,
 				9353A4AB250E357B0060647F /* QiblaVC.swift in Sources */,
+				93275C8325145602000C8B6C /* UserDefaults.swift in Sources */,
 				9353A4B4250E4A4E0060647F /* PrayerTimeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

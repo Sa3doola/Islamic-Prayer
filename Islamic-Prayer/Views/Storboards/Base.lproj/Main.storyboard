@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="npw-rA-Tkp">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -31,11 +31,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="Islamic_Prayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKR-19-sCa">
-                                <rect key="frame" x="85" y="427" width="150" height="52"/>
+                                <rect key="frame" x="112.5" y="526" width="150" height="52"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="UOw-jt-eC1"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="5rw-Vq-KWJ">
-                                <rect key="frame" x="10" y="54" width="300" height="343"/>
+                                <rect key="frame" x="37.5" y="54" width="300" height="343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Am0-EB-HX5">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="27.5"/>
@@ -110,24 +110,24 @@
                                 </subviews>
                             </stackView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0k-hH-Uld">
-                                <rect key="frame" x="10" y="54" width="300" height="353"/>
+                                <rect key="frame" x="10" y="54" width="355" height="452"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZC-DO-llC">
-                                        <rect key="frame" x="0.0" y="40" width="300" height="313"/>
+                                        <rect key="frame" x="0.0" y="40" width="355" height="412"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3hx-XL-HBT">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="313"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="412"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountriesTVC" id="N7j-0e-rUR" customClass="CountriesTVC" customModule="Islamic_Prayer" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="300" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="28" width="355" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N7j-0e-rUR" id="RO5-KD-uBa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="udd-Ws-lqL">
-                                                                    <rect key="frame" x="86.5" y="9" width="127.5" height="26"/>
+                                                                    <rect key="frame" x="114" y="9" width="127.5" height="26"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -154,13 +154,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpC-eH-1AZ">
-                                        <rect key="frame" x="76" y="6" width="148" height="26"/>
+                                        <rect key="frame" x="103.5" y="6" width="148" height="26"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
                                         <color key="textColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4L-1t-veV">
-                                        <rect key="frame" x="260" y="7" width="25" height="24"/>
+                                        <rect key="frame" x="315" y="7" width="25" height="24"/>
                                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <connections>
                                             <action selector="dismissTableViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awN-jy-36n"/>
@@ -215,7 +215,7 @@
                 <navigationController id="1zi-ry-EcQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="location" catalog="system" id="Bbg-Lz-ZuW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fXz-yD-cFj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -231,12 +231,57 @@
             <objects>
                 <viewController id="yHa-tb-VK0" customClass="QiblaVC" customModule="Islamic_Prayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kfV-cj-1cq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Il1-mW-AyA">
+                                <rect key="frame" x="52" y="516" width="271" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKy-fW-LbA">
+                                        <rect key="frame" x="65.5" y="0.0" width="140.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure that your location in ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtZ-kR-RTy">
+                                        <rect key="frame" x="0.0" y="48.5" width="271" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FInal-Base" translatesAutoresizingMaskIntoConstraints="NO" id="530-q2-5Mi">
+                                <rect key="frame" x="27.5" y="94" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="I71-FK-Tlg"/>
+                                    <constraint firstAttribute="width" constant="320" id="boa-ul-I3n"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Final-Dott" translatesAutoresizingMaskIntoConstraints="NO" id="VyK-Zj-0r4">
+                                <rect key="frame" x="27.5" y="94" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="ZKA-kd-lWo"/>
+                                    <constraint firstAttribute="width" constant="320" id="nHg-HQ-dpb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EJC-vo-N9m" firstAttribute="bottom" secondItem="Il1-mW-AyA" secondAttribute="bottom" constant="30" id="9fD-60-owo"/>
+                            <constraint firstItem="530-q2-5Mi" firstAttribute="top" secondItem="EJC-vo-N9m" secondAttribute="top" constant="50" id="GRt-wt-VX9"/>
+                            <constraint firstItem="Il1-mW-AyA" firstAttribute="centerX" secondItem="kfV-cj-1cq" secondAttribute="centerX" id="Zdr-x8-XE3"/>
+                            <constraint firstItem="VyK-Zj-0r4" firstAttribute="top" secondItem="EJC-vo-N9m" secondAttribute="top" constant="50" id="aM3-jg-GHN"/>
+                            <constraint firstItem="VyK-Zj-0r4" firstAttribute="centerX" secondItem="kfV-cj-1cq" secondAttribute="centerX" id="kCu-TQ-QFI"/>
+                            <constraint firstItem="530-q2-5Mi" firstAttribute="centerX" secondItem="kfV-cj-1cq" secondAttribute="centerX" id="zFE-LX-hmi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EJC-vo-N9m"/>
                     </view>
                     <navigationItem key="navigationItem" title="Qibla" id="nm2-1N-BBj"/>
+                    <connections>
+                        <outlet property="CityName" destination="FKy-fW-LbA" id="PoL-RL-0RV"/>
+                        <outlet property="finalBaseImage" destination="530-q2-5Mi" id="3d1-bU-XcT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8s-1J-CqE" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,7 +293,7 @@
                 <navigationController id="d68-tK-Ph5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="clock" catalog="system" id="puk-op-hNJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bWm-R1-MED">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -261,6 +306,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FInal-Base" width="266.5" height="266.5"/>
+        <image name="Final-Dott" width="266.5" height="266.5"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="location" catalog="system" width="128" height="115"/>
     </resources>
