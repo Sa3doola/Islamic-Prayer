@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var countriesListView: UIView!
@@ -25,6 +25,8 @@ class HomeVC: UIViewController {
         
         shadowView.isHidden = true
         countriesListView.isHidden = true
+        
+        CityNameTxtField.delegate = self
         
         CountriesTableView.delegate = self
         CountriesTableView.dataSource = self
@@ -73,6 +75,11 @@ class HomeVC: UIViewController {
     @IBAction func dismissTableViewAction(_ sender: Any) {
         shadowView.isHidden = true
         countriesListView.isHidden = true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func searchButtonAction(_ sender: UIButton) {
