@@ -51,35 +51,31 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="5rw-Vq-KWJ">
-                                <rect key="frame" x="37.5" y="54" width="300" height="343"/>
+                                <rect key="frame" x="27.5" y="54" width="320" height="409"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Am0-EB-HX5">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="27.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="27.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="P5w-RS-ipW">
-                                        <rect key="frame" x="0.0" y="34.5" width="300" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="9xb-2h-1vW"/>
-                                            <constraint firstAttribute="width" constant="300" id="Y9E-dD-JBc"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="34.5" width="320" height="216"/>
                                         <connections>
                                             <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Y5-e0-iYX"/>
                                         </connections>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Country:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-du-Wwu">
-                                        <rect key="frame" x="0.0" y="191.5" width="300" height="27.5"/>
+                                        <rect key="frame" x="0.0" y="257.5" width="320" height="27.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="et3-sf-YfN">
-                                        <rect key="frame" x="0.0" y="226" width="300" height="40"/>
+                                        <rect key="frame" x="0.0" y="292" width="320" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUO-Ij-jYV">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
                                                 <color key="backgroundColor" red="0.94117647059999998" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                                 <state key="normal" title="Select">
@@ -90,7 +86,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xmX-LX-gZZ">
-                                                <rect key="frame" x="160" y="0.0" width="140" height="40"/>
+                                                <rect key="frame" x="170" y="0.0" width="150" height="40"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -98,17 +94,23 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select City:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW2-ke-jPV">
-                                        <rect key="frame" x="0.0" y="273" width="300" height="27.5"/>
+                                        <rect key="frame" x="0.0" y="339" width="320" height="27.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3I-ON-nSr">
-                                        <rect key="frame" x="0.0" y="307.5" width="300" height="35.5"/>
+                                        <rect key="frame" x="0.0" y="373.5" width="320" height="35.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="P5w-RS-ipW" firstAttribute="top" secondItem="Am0-EB-HX5" secondAttribute="bottom" constant="7" id="CjW-Be-wnf"/>
+                                    <constraint firstItem="P5w-RS-ipW" firstAttribute="leading" secondItem="5rw-Vq-KWJ" secondAttribute="leading" id="YTz-jp-ALV"/>
+                                    <constraint firstAttribute="trailing" secondItem="P5w-RS-ipW" secondAttribute="trailing" id="rdB-sv-3Vr"/>
+                                    <constraint firstItem="gNw-du-Wwu" firstAttribute="top" secondItem="P5w-RS-ipW" secondAttribute="bottom" constant="7" id="wIU-kA-sFH"/>
+                                </constraints>
                             </stackView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0k-hH-Uld">
                                 <rect key="frame" x="10" y="54" width="355" height="452"/>
