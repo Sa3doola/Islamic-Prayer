@@ -123,7 +123,6 @@ extension HomeVC: IslamicViewModelDelegate {
     
     func didUpdataTime(_ viewModel: ViewModel, model: IslamicModel) {
         DispatchQueue.main.async {
-            
             let vc = DisplayTimeVC(model: model)
             vc.title = "Salat Time"
             self.navigationController?.pushViewController(vc, animated: true)
@@ -131,14 +130,12 @@ extension HomeVC: IslamicViewModelDelegate {
     }
     
     func didFailWithError(error: Error) {
-        
         print(error.localizedDescription)
     }
     
-    
 }
 
-//MARK: - TabelView
+//MARK: - TabelView Delegate and Datasource
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     
