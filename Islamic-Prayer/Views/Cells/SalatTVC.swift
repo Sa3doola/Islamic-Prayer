@@ -68,5 +68,4 @@ class SalatTVC: UITableViewCell {
                                  height: contentView.height/2)
     }
     
-    
 }

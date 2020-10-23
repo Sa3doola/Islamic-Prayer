@@ -17,7 +17,7 @@ struct PrayerTimeData : Codable {
 }
 
 
-struct DataTime : Codable{
+struct DataTime : Codable {
     
     let timings : Timings
     let date : JSONDate
